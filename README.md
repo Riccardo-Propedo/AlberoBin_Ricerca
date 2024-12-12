@@ -34,13 +34,14 @@ public:
    - Altrimenti, inserisci l'elemento nel sottoalbero sinistro o destro, rispettando la proprietà del BST.
 
    Passi dell'Algoritmo di Inserimento:
-      • Inizio dalla radice: Iniziamo l'inserimento dal nodo radice.
-      • Confronto: Se il valore da inserire è uguale al valore del nodo corrente, l'inserimento non viene effettuato poiché i valori duplicati non sono consentiti. Se il valore da inserire è minore del valore del nodo corrente, ci si sposta verso il figlio sinistro. Se il valore da inserire è maggiore del valore del nodo corrente, ci si sposta verso il figlio destro.
-      • Posizionamento: Quando si raggiunge un nodo foglia (cioè un nodo senza figli), il nuovo valore viene inserito come nuovo nodo figlia (sinistra se é minore del nodo, destra altrimenti).
+      - Inizio dalla radice: Iniziamo l'inserimento dal nodo radice.
+      - Confronto: Se il valore da inserire è uguale al valore del nodo corrente, l'inserimento non viene effettuato poiché i valori duplicati non sono consentiti. Se il valore da inserire è minore del valore del nodo corrente, ci si sposta verso il figlio sinistro. Se il valore da inserire è maggiore del valore del nodo corrente, ci si sposta verso il figlio destro.
+      - Posizionamento: Quando si raggiunge un nodo foglia (cioè un nodo senza figli), il nuovo valore viene inserito come nuovo nodo figlia (sinistra se é minore del nodo, destra altrimenti).
 
 3. **Ricerca (`cerca`)**:
    - Verifica ricorsivamente se un valore è presente nell'albero, partendo dalla radice.
-  	 Passi dell'algoritmo di ricerca:
+  	
+    Passi dell'algoritmo di ricerca:
        1. Partenza dalla radice: iniziamo la ricerca dal nodo radice dell'albero.
        2. Confronto: se il valore del nodo corrente è uguale al valore che cerchiamo, abbiamo trovato il nodo. Se il valore del nodo corrente è maggiore del valore cercato, procediamo verso il figlio sinistro. Se il valore del nodo corrente è minore del valore cercato, procediamo verso il figlio destro.
        3. Ripetizione: Continuiamo a scendere nell'albero, ripetendo il confronto, fino a: 
@@ -52,7 +53,8 @@ public:
      1. Nodo senza figli.
      2. Nodo con un solo figlio.
      3. Nodo con due figli (utilizzando il successore in-order per sostituire il nodo da rimuovere).
-  	 Passi dell'algoritmo di ricerca:
+
+Passi dell'algoritmo di ricerca:
        - Casi di RimozioneNodo senza figli (nodo foglia): Se il nodo da rimuovere è una foglia (cioè non ha figli), è sufficiente rimuoverlo direttamente.
        - Nodo con un solo figlio: Se il nodo ha solo un figlio, si sostituisce il nodo da rimuovere con il suo unico figlio. In questo modo, la struttura dell'albero rimane valida.
        - Nodo con due figli: Se il nodo ha due figli, ci sono due approcci comuni per gestire la rimozione:
