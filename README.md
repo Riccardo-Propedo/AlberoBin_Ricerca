@@ -41,7 +41,7 @@ public:
 3. **Ricerca (`cerca`)**:
    - Verifica ricorsivamente se un valore è presente nell'albero, partendo dalla radice.
   	
-    Passi dell'algoritmo di ricerca:
+   Passi dell'algoritmo di ricerca:
       - Partenza dalla radice: iniziamo la ricerca dal nodo radice dell'albero.
       - Confronto: se il valore del nodo corrente è uguale al valore che cerchiamo, abbiamo trovato il nodo. Se il valore del nodo corrente è maggiore del valore cercato, procediamo verso il figlio sinistro. Se il valore del nodo corrente è minore del valore cercato, procediamo verso il figlio destro.
       - Ripetizione: Continuiamo a scendere nell'albero, ripetendo il confronto, fino a: 
@@ -81,7 +81,3 @@ public:
 5. Rimuovere un valore e ristampare l'albero. facoltativo
 6. Trovare e stampare il massimo e il minimo.
 ```
-
----
-
-Questa traccia richiede agli studenti di implementare tutte le operazioni essenziali per un BST, estendendo la classe base. Se hai bisogno di ulteriori dettagli o modifiche, fammi sapere!
