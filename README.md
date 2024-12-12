@@ -80,4 +80,4 @@ public:
 4. Stampare i valori in ordine crescente.
 5. Rimuovere un valore e ristampare l'albero. facoltativo
 6. Trovare e stampare il massimo e il minimo.
-```
+
