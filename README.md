@@ -32,12 +32,13 @@ public:
 1. **Inserimento (`inserisci`)**:
    - Se l'albero è vuoto, crea la radice.
    - Altrimenti, inserisci l'elemento nel sottoalbero sinistro o destro, rispettando la proprietà del BST.
-  Passi dell'Algoritmo di Inserimento:
-   • Inizio dalla radice: Iniziamo l'inserimento dal nodo radice.
-   • Confronto: Se il valore da inserire è uguale al valore del nodo corrente, l'inserimento non viene effettuato poiché i valori duplicati non sono consentiti. Se il valore da inserire è minore del valore del nodo corrente, ci si sposta verso il figlio sinistro. Se il valore da inserire è maggiore del valore del nodo corrente, ci si sposta verso il figlio destro.
-   • Posizionamento: Quando si raggiunge un nodo foglia (cioè un nodo senza figli), il nuovo valore viene inserito come nuovo nodo figlia (sinistra se é minore del nodo, destra altrimenti).
 
-2. **Ricerca (`cerca`)**:
+   Passi dell'Algoritmo di Inserimento:
+      • Inizio dalla radice: Iniziamo l'inserimento dal nodo radice.
+      • Confronto: Se il valore da inserire è uguale al valore del nodo corrente, l'inserimento non viene effettuato poiché i valori duplicati non sono consentiti. Se il valore da inserire è minore del valore del nodo corrente, ci si sposta verso il figlio sinistro. Se il valore da inserire è maggiore del valore del nodo corrente, ci si sposta verso il figlio destro.
+      • Posizionamento: Quando si raggiunge un nodo foglia (cioè un nodo senza figli), il nuovo valore viene inserito come nuovo nodo figlia (sinistra se é minore del nodo, destra altrimenti).
+
+3. **Ricerca (`cerca`)**:
    - Verifica ricorsivamente se un valore è presente nell'albero, partendo dalla radice.
   	 Passi dell'algoritmo di ricerca:
        1. Partenza dalla radice: iniziamo la ricerca dal nodo radice dell'albero.
@@ -46,7 +47,7 @@ public:
             • Trovare il valore (successo).
             • Raggiungere un nodo foglia (non c'è un nodo con il valore cercato, quindi il valore non è presente nell'albero).
 
-3. **Rimozione (`rimuovi`)**: facoltativo
+4. **Rimozione (`rimuovi`)**: facoltativo
    - Rimuove un nodo specifico, gestendo i tre casi:
      1. Nodo senza figli.
      2. Nodo con un solo figlio.
@@ -58,12 +59,12 @@ public:
            ▪ Sostituzione con il successore in-ordine: Si trova il nodo con il valore più piccolo nel sottoalbero destro del nodo da rimuovere (il successore) e viene spostato nel nodo da rimuovere.
            ▪ Sostituzione con il predecessore in-ordine: Si trova il nodo con il valore più grande nel sottoalbero sinistro (il predecessore) e viene spostato nel nodo da rimuovere.
 
-4. **Massimo (`massimo`) e Minimo (`minimo`)**:
+5. **Massimo (`massimo`) e Minimo (`minimo`)**:
    - Trova ricorsivamente il nodo più a destra o più a sinistra.
      -  Il valore massimo in un BST si trova sempre nel nodo più a destra dell'albero. Per trovare il valore massimo, si segue il percorso dei nodi a destra fino a raggiungere un nodo senza figli a destra.
      -  Il valore minimo in un BST si trova sempre nel nodo più a sinistra dell'albero. Per trovare il valore minimo, si segue il percorso dei nodi a sinistra fino a raggiungere un nodo senza figli a sinistra
 
-5. **Stampa In-Order (`stampaInOrdine`)**:
+6. **Stampa In-Order (`stampaInOrdine`)**:
    - Stampa i nodi in ordine crescente visitando il sottoalbero sinistro, il nodo corrente, e il sottoalbero destro.
      Osservare il seguente pseudocodice:
     ![image](https://github.com/user-attachments/assets/53fc273b-b485-4acd-a909-9fa520cb2bd8)
