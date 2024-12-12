@@ -22,12 +22,6 @@ public:
     T massimo() const;
     T minimo() const;
     void stampaInOrdine() const;
-
-private:
-    void inserisciRicorsivo(int indice, const T& valore);
-    bool cercaRicorsivo(int indice, const T& valore) const;
-    void stampaInOrdineRicorsivo(int indice) const;
-    int trovaMinimoNodo(int indice) const;
 };
 ```
 
