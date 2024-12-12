@@ -55,11 +55,11 @@ public:
      3. Nodo con due figli (utilizzando il successore in-order per sostituire il nodo da rimuovere).
 
    Passi dell'algoritmo di ricerca:
-       - Casi di RimozioneNodo senza figli (nodo foglia): Se il nodo da rimuovere è una foglia (cioè non ha figli), è sufficiente rimuoverlo direttamente.
-       - Nodo con un solo figlio: Se il nodo ha solo un figlio, si sostituisce il nodo da rimuovere con il suo unico figlio. In questo modo, la struttura dell'albero rimane valida.
-       - Nodo con due figli: Se il nodo ha due figli, ci sono due approcci comuni per gestire la rimozione:
-           ▪ Sostituzione con il successore in-ordine: Si trova il nodo con il valore più piccolo nel sottoalbero destro del nodo da rimuovere (il successore) e viene spostato nel nodo da rimuovere.
-           ▪ Sostituzione con il predecessore in-ordine: Si trova il nodo con il valore più grande nel sottoalbero sinistro (il predecessore) e viene spostato nel nodo da rimuovere.
+   - Casi di RimozioneNodo senza figli (nodo foglia): Se il nodo da rimuovere è una foglia (cioè non ha figli), è sufficiente rimuoverlo direttamente.
+   - Nodo con un solo figlio: Se il nodo ha solo un figlio, si sostituisce il nodo da rimuovere con il suo unico figlio. In questo modo, la struttura dell'albero rimane valida.
+   - Nodo con due figli: Se il nodo ha due figli, ci sono due approcci comuni per gestire la rimozione:
+      ▪ Sostituzione con il successore in-ordine: Si trova il nodo con il valore più piccolo nel sottoalbero destro del nodo da rimuovere (il successore) e viene spostato nel nodo da rimuovere.
+      ▪ Sostituzione con il predecessore in-ordine: Si trova il nodo con il valore più grande nel sottoalbero sinistro (il predecessore) e viene spostato nel nodo da rimuovere.
 
 6. **Massimo (`massimo`) e Minimo (`minimo`)**:
    - Trova ricorsivamente il nodo più a destra o più a sinistra.
