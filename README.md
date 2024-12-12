@@ -42,11 +42,11 @@ public:
    - Verifica ricorsivamente se un valore è presente nell'albero, partendo dalla radice.
   	
    Passi dell'algoritmo di ricerca:
-      - Partenza dalla radice: iniziamo la ricerca dal nodo radice dell'albero.
-      - Confronto: se il valore del nodo corrente è uguale al valore che cerchiamo, abbiamo trovato il nodo. Se il valore del nodo corrente è maggiore del valore cercato, procediamo verso il figlio sinistro. Se il valore del nodo corrente è minore del valore cercato, procediamo verso il figlio destro.
-      - Ripetizione: Continuiamo a scendere nell'albero, ripetendo il confronto, fino a: 
-        - Trovare il valore (successo).
-        - Raggiungere un nodo foglia (non c'è un nodo con il valore cercato, quindi il valore non è presente nell'albero).
+   - Partenza dalla radice: iniziamo la ricerca dal nodo radice dell'albero.
+   - Confronto: se il valore del nodo corrente è uguale al valore che cerchiamo, abbiamo trovato il nodo. Se il valore del nodo corrente è maggiore del valore cercato, procediamo verso il figlio sinistro. Se il valore del nodo corrente è minore del valore cercato, procediamo verso il figlio destro.
+   - Ripetizione: Continuiamo a scendere nell'albero, ripetendo il confronto, fino a:
+      - Trovare il valore (successo).
+      - Raggiungere un nodo foglia (non c'è un nodo con il valore cercato, quindi il valore non è presente nell'albero).
 
 5. **Rimozione (`rimuovi`)**: facoltativo
    - Rimuove un nodo specifico, gestendo i tre casi:
