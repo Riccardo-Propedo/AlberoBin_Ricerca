@@ -42,13 +42,13 @@ public:
    - Verifica ricorsivamente se un valore è presente nell'albero, partendo dalla radice.
   	
     Passi dell'algoritmo di ricerca:
-       - Partenza dalla radice: iniziamo la ricerca dal nodo radice dell'albero.
-       - Confronto: se il valore del nodo corrente è uguale al valore che cerchiamo, abbiamo trovato il nodo. Se il valore del nodo corrente è maggiore del valore cercato, procediamo verso il figlio sinistro. Se il valore del nodo corrente è minore del valore cercato, procediamo verso il figlio destro.
-       - Ripetizione: Continuiamo a scendere nell'albero, ripetendo il confronto, fino a: 
-            • Trovare il valore (successo).
-            • Raggiungere un nodo foglia (non c'è un nodo con il valore cercato, quindi il valore non è presente nell'albero).
+      - Partenza dalla radice: iniziamo la ricerca dal nodo radice dell'albero.
+      - Confronto: se il valore del nodo corrente è uguale al valore che cerchiamo, abbiamo trovato il nodo. Se il valore del nodo corrente è maggiore del valore cercato, procediamo verso il figlio sinistro. Se il valore del nodo corrente è minore del valore cercato, procediamo verso il figlio destro.
+      - Ripetizione: Continuiamo a scendere nell'albero, ripetendo il confronto, fino a: 
+        - Trovare il valore (successo).
+        - Raggiungere un nodo foglia (non c'è un nodo con il valore cercato, quindi il valore non è presente nell'albero).
 
-4. **Rimozione (`rimuovi`)**: facoltativo
+5. **Rimozione (`rimuovi`)**: facoltativo
    - Rimuove un nodo specifico, gestendo i tre casi:
      1. Nodo senza figli.
      2. Nodo con un solo figlio.
@@ -61,12 +61,12 @@ public:
            ▪ Sostituzione con il successore in-ordine: Si trova il nodo con il valore più piccolo nel sottoalbero destro del nodo da rimuovere (il successore) e viene spostato nel nodo da rimuovere.
            ▪ Sostituzione con il predecessore in-ordine: Si trova il nodo con il valore più grande nel sottoalbero sinistro (il predecessore) e viene spostato nel nodo da rimuovere.
 
-5. **Massimo (`massimo`) e Minimo (`minimo`)**:
+6. **Massimo (`massimo`) e Minimo (`minimo`)**:
    - Trova ricorsivamente il nodo più a destra o più a sinistra.
      -  Il valore massimo in un BST si trova sempre nel nodo più a destra dell'albero. Per trovare il valore massimo, si segue il percorso dei nodi a destra fino a raggiungere un nodo senza figli a destra.
      -  Il valore minimo in un BST si trova sempre nel nodo più a sinistra dell'albero. Per trovare il valore minimo, si segue il percorso dei nodi a sinistra fino a raggiungere un nodo senza figli a sinistra
 
-6. **Stampa In-Order (`stampaInOrdine`)**:
+7. **Stampa In-Order (`stampaInOrdine`)**:
    - Stampa i nodi in ordine crescente visitando il sottoalbero sinistro, il nodo corrente, e il sottoalbero destro.
      Osservare il seguente pseudocodice:
     ![image](https://github.com/user-attachments/assets/53fc273b-b485-4acd-a909-9fa520cb2bd8)
