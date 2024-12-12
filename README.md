@@ -42,9 +42,9 @@ public:
    - Verifica ricorsivamente se un valore è presente nell'albero, partendo dalla radice.
   	
     Passi dell'algoritmo di ricerca:
-       1. Partenza dalla radice: iniziamo la ricerca dal nodo radice dell'albero.
-       2. Confronto: se il valore del nodo corrente è uguale al valore che cerchiamo, abbiamo trovato il nodo. Se il valore del nodo corrente è maggiore del valore cercato, procediamo verso il figlio sinistro. Se il valore del nodo corrente è minore del valore cercato, procediamo verso il figlio destro.
-       3. Ripetizione: Continuiamo a scendere nell'albero, ripetendo il confronto, fino a: 
+       - Partenza dalla radice: iniziamo la ricerca dal nodo radice dell'albero.
+       - Confronto: se il valore del nodo corrente è uguale al valore che cerchiamo, abbiamo trovato il nodo. Se il valore del nodo corrente è maggiore del valore cercato, procediamo verso il figlio sinistro. Se il valore del nodo corrente è minore del valore cercato, procediamo verso il figlio destro.
+       - Ripetizione: Continuiamo a scendere nell'albero, ripetendo il confronto, fino a: 
             • Trovare il valore (successo).
             • Raggiungere un nodo foglia (non c'è un nodo con il valore cercato, quindi il valore non è presente nell'albero).
 
@@ -54,7 +54,7 @@ public:
      2. Nodo con un solo figlio.
      3. Nodo con due figli (utilizzando il successore in-order per sostituire il nodo da rimuovere).
 
-Passi dell'algoritmo di ricerca:
+   Passi dell'algoritmo di ricerca:
        - Casi di RimozioneNodo senza figli (nodo foglia): Se il nodo da rimuovere è una foglia (cioè non ha figli), è sufficiente rimuoverlo direttamente.
        - Nodo con un solo figlio: Se il nodo ha solo un figlio, si sostituisce il nodo da rimuovere con il suo unico figlio. In questo modo, la struttura dell'albero rimane valida.
        - Nodo con due figli: Se il nodo ha due figli, ci sono due approcci comuni per gestire la rimozione:
