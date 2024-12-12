@@ -73,7 +73,7 @@ public:
 
 ---
 
-### Programma Principale:
+### 6. Programma Principale:
 1. Creare un albero binario di ricerca.
 2. Far inserire dall'utente i valori dei nodi (chiedi prima quanti nodi inserire, e poi richiederli uno ad uno. Ricorda che la posizione nell'albero non puó essere scelta dall'utente in quanto é calcolata in automatico dal programma)
 3. Cercare due valori, stampando un messaggio di successo o fallimento.
