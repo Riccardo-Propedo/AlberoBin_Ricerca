@@ -1,23 +1,27 @@
 #include <iostream>
-#include "AlberoBin.cpp"
+#include "AlberoBin_Ricerca.cpp"
 
 int main() {
-    AlberoBin<int> albero;
+    AlberoBinarioRicerca<int> albero;
 
-    // Creazione dell'albero
-    albero.insRadice(10);
-    albero.insFiglioSinistro(0, 20);
-    albero.insFiglioDestro(0, 30);
-    albero.insFiglioSinistro(1, 40);
-    albero.insFiglioDestro(1, 50);
+    // Inserimento di nodi
+    albero.inserisci(10);
+    albero.inserisci(5);
+    albero.inserisci(15);
+    albero.inserisci(3);
+    albero.inserisci(7);
 
-    // Stampa l'albero
-    albero.stampa();
+    // Stampa dell'albero in ordine crescente
+    std::cout << "Albero in ordine crescente: ";
+    albero.stampaInOrdine();
 
-    // Operazioni
-    std::cout << "Radice: " << albero.radice() << "\n";
-    std::cout << "Figlio sinistro della radice: " << albero.figlioSinistro(0) << "\n";
-    std::cout << "Figlio destro della radice: " << albero.figlioDestro(0) << "\n";
+    // Ricerca di un valore
+    int valoreDaCercare = 7;
+    if (albero.cerca(valoreDaCercare)) {
+        std::cout << valoreDaCercare << " trovato nell'albero.\n";
+    } else {
+        std::cout << valoreDaCercare << " non trovato.\n";
+    }
 
     return 0;
 }
